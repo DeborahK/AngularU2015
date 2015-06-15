@@ -1,0 +1,26 @@
+﻿--- Panel & Panel Heading Classes ---
+    <div class="panel panel-primary" ng-controller="MovieListCtrl as vm">
+        <div class="panel-heading">
+            <h2 class="vm.title">{{title}}</h2>
+        </div>
+
+--- Panel Body Classes ---
+        <div class="panel-body" >
+
+            <!-- Filter the Title   -->
+            <div class="row">
+                <div class="col-md-2">Filter by:</div>
+                <div class="col-md-4"><input type="text" ng-model="listFilter" /></div>
+            </div>
+
+            <div class="row" ng-show="listFilter">
+                <h3>Movies filtered by: {{listFilter}}</h3>
+            </div>
+
+--- Table Classes ---
+            <div class="table-responsive">
+                <table class="table" ng-if="vm.movies.length">
+
+--- Button Class ---
+                                    class="btn btn-info"
+
