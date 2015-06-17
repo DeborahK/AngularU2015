@@ -4,11 +4,10 @@
     angular
         .module("movieHunter")
         .controller("MovieDetailCtrl",
-                    ["movieResource",
-                        "$routeParams",
+                    ["$routeParams",
                      MovieDetailCtrl]);
 
-    function MovieDetailCtrl(movieResource, $routeParams) {
+    function MovieDetailCtrl($routeParams) {
         var vm = this;
 
         vm.movieId = $routeParams.movieId;

@@ -4,10 +4,9 @@
     angular
     .module("movieHunter")
     .controller("MovieListCtrl",
-                ["movieResource",
-                    MovieListCtrl]);
+                [MovieListCtrl]);
 
-    function MovieListCtrl(movieResource) {
+    function MovieListCtrl() {
         var vm = this;
 
         vm.movies = [
