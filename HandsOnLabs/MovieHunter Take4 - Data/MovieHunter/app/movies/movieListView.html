@@ -45,12 +45,6 @@
                         <td>{{ ::movie.director }}</td>
                         <td>{{ ::movie.releaseDate | date }}</td>
                         <td>{{ ::movie.mpaa | uppercase}}</td>
-                        <td>
-                            <a class="btn btn-primary"
-                               ng-href="#editMovie/{{::movie.movieId}}">
-                                Edit
-                            </a>
-                        </td>
                     </tr>
                 </tbody>
             </table>

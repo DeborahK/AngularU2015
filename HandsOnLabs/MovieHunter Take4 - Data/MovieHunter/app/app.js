@@ -3,7 +3,7 @@
 
     var app = angular.module("movieHunter", ["ngRoute",
                                              "common.services",
-                                             "ngMockE2E"]);
+                                             "movieResourceMock"]);
 
     app.config(["$routeProvider",
         function ($routeProvider) {
