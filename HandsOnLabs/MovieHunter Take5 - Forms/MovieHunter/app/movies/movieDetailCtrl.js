@@ -5,7 +5,7 @@
         .module("movieHunter")
         .controller("MovieDetailCtrl",
                     ["movieResource",
-                        "$routeParams",
+                     "$routeParams",
                      MovieDetailCtrl]);
 
     function MovieDetailCtrl(movieResource, $routeParams) {
@@ -13,15 +13,9 @@
 
         vm.movie = '';
 
-        movieResource.get({ movieId: $routeParams.movieId },
+        movieResource.get({ id: $routeParams.movieId },
             function (data) {
                 vm.movie = data;
-            },
-            function (response) {
-                vm.message = response.message + "\r\n";
-                if (response.data && response.data.exceptionMessage)
-                    vm.message += response.data.exceptionMessage;
-            }
-        );
+            });
     }
 }());

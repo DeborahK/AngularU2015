@@ -9,6 +9,6 @@
                     movieResource]);
 
     function movieResource($resource, appSettings) {
-        return $resource(appSettings.serverPath + "/api/movies/:movieId");
+        return $resource(appSettings.serverPath + "/api/movies/:id");
     }
 }());

@@ -28,20 +28,6 @@
                                ng-minlength="3"
                                ng-maxlength="50" />
                     </div>
-                    <span class="help-block">
-                        <!--<span class="help-block"
-                        ng-if="movieForm.inputMovieTitle.$dirty">-->
-                        <span ng-messages="movieForm.inputMovieTitle.$error">
-                            <span ng-message="required">Movie title is required</span>
-                            <span ng-message="minlength">Movie title must be at least 3 characters in length</span>
-                            <span ng-message="maxlength">Movie title cannot exceed 50 characters in length</span>
-                        </span>
-                    </span>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-8" style="color:cornflowerblue">
-                        Current value is: {{vm.movie.title}}
-                    </div>
                 </div>
 
                 <div class="form-group"
@@ -61,14 +47,6 @@
                                ng-minlength="3"
                                ng-maxlength="50" />
                     </div>
-                    <span class="help-block"
-                          ng-if="movieForm.inputDirector.$dirty">
-                        <span ng-messages="movieForm.inputDirector.$error">
-                            <span ng-message="required">Director is required</span>
-                            <span ng-message="minlength">Director must be at least 3 characters in length</span>
-                            <span ng-message="maxlength">Director cannot exceed 50 characters in length</span>
-                        </span>
-                    </span>
                 </div>
 
                 <div class="form-group"
@@ -88,14 +66,6 @@
                                min="1"
                                max="5" />
                     </div>
-                    <span class="help-block"
-                          ng-if="movieForm.inputStarRating.$dirty">
-                        <span ng-messages="movieForm.inputStarRating.$error">
-                            <span ng-message="required">Please enter a number between 1 and 5</span>
-                            <span ng-message="min">Please enter a number between 1 and 5</span>
-                            <span ng-message="max">Please enter a number between 1 and 5</span>
-                        </span>
-                    </span>
                 </div>
 
                 <div class="form-group"

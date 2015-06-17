@@ -19,6 +19,10 @@
                     templateUrl : "app/movies/movieDetailView.html",
                     controller : "MovieDetailCtrl as vm"
                 })
+                .when("/editMovie/:movieId", {
+                    templateUrl: "app/movies/movieEditView.html",
+                    controller: "MovieEditCtrl as vm"
+                })
                 .otherwise("/");
         }]);
 }());
