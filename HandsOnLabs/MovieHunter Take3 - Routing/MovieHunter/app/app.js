@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
 
-    var app = angular.module("movieHunter", ["ngRoute"]);
+    var app = angular.module("movieHunter", []);
 
     app.config(["$routeProvider",
         function ($routeProvider) {
