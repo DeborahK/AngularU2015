@@ -1,14 +1,9 @@
 ﻿(function () {
     "use strict";
 
-    // To use the mocking inject : "movieResourceMock"
-
-    // To use Web API
-    var app = angular.module("movieHunter",
-                            ["ngRoute",
-                            "common.services",
-                            "common.directives",
-                            "ngMessages"]);
+    var app = angular.module("movieHunter", ["ngRoute",
+                                             "common.services",
+                                             "movieResourceMock"]);
 
     app.config(["$routeProvider",
         function ($routeProvider) {
@@ -23,10 +18,6 @@
                 .when("/showDetail/:movieId", {
                     templateUrl : "app/movies/movieDetailView.html",
                     controller : "MovieDetailCtrl as vm"
-                })
-                .when("/editMovie/:movieId", {
-                    templateUrl: "app/movies/movieEditView.html",
-                    controller: "MovieEditCtrl as vm"
                 })
                 .otherwise("/");
         }]);

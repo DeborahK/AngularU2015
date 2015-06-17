@@ -4,10 +4,9 @@
     angular
     .module("movieHunter")
     .controller("MovieListCtrl",
-                ["movieResource",
-                    MovieListCtrl]);
+                [MovieListCtrl]);
 
-    function MovieListCtrl(movieResource) {
+    function MovieListCtrl() {
         var vm = this;
 
         vm.movies = [];
@@ -18,10 +17,6 @@
             vm.showImage = !vm.showImage;
         };
 
-        movieResource.query(
-            function (data) {
-                vm.movies = data;
-            });
     }
 
 }());

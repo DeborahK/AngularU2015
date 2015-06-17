@@ -100,6 +100,5 @@
         // Pass through any requests for html files
         $httpBackend.whenGET(/\.html$/).passThrough();
 
-
     });
 }());
