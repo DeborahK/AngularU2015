@@ -13,7 +13,7 @@
 
         vm.movie = '';
 
-        movieResource.get({ movieId: $routeParams.movieId },
+        movieResource.get({ id: $routeParams.movieId },
             function (data) {
                 vm.movie = data;
             },

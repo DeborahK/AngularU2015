@@ -15,7 +15,7 @@
         vm.title = "";
         vm.message = "";
 
-        movieResource.get({ movieId: $routeParams.movieId },
+        movieResource.get({ id: $routeParams.movieId },
             function (data) {
                 vm.movie = data;
 
@@ -37,11 +37,5 @@
             }
         };
 
-        // When using ng-model-options
-        //vm.cancelEntry = function (control, event) {
-        //    if (event.keyCode == 27) {
-        //        control.$rollbackViewValue();  
-        //    }
-        //};
     }
 }());

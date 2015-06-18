@@ -10,10 +10,8 @@
             <fieldset>
                 <legend>Edit Movie Information</legend>
                 <div class="form-group"
-                     ng-class="{'has-error':movieForm.inputMovieTitle.$invalid}">
-                    <!--<div class="form-group"
-                         ng-class="{'has-error':movieForm.inputMovieTitle.$invalid &&
-                        movieForm.inputMovieTitle.$dirty}">-->
+                     ng-class="{'has-error':movieForm.inputMovieTitle.$invalid &&
+                                            movieForm.inputMovieTitle.$dirty}">
                     <label class="col-md-2 control-label"
                            for="inputMovieTitle">Movie Title</label>
 
@@ -28,20 +26,14 @@
                                ng-minlength="3"
                                ng-maxlength="50" />
                     </div>
-                    <span class="help-block">
-                        <!--<span class="help-block"
-                        ng-if="movieForm.inputMovieTitle.$dirty">-->
+                    <span class="help-block"
+                          ng-if="movieForm.inputMovieTitle.$dirty">
                         <span ng-messages="movieForm.inputMovieTitle.$error">
                             <span ng-message="required">Movie title is required</span>
                             <span ng-message="minlength">Movie title must be at least 3 characters in length</span>
                             <span ng-message="maxlength">Movie title cannot exceed 50 characters in length</span>
                         </span>
                     </span>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-8" style="color:cornflowerblue">
-                        Current value is: {{vm.movie.title}}
-                    </div>
                 </div>
 
                 <div class="form-group"
