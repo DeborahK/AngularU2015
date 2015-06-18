@@ -3,8 +3,8 @@
                           ng-if="movieForm.inputMovieTitle.$dirty">
                         <span ng-messages="movieForm.inputMovieTitle.$error">
                             <span ng-message="required">Movie title is required</span>
-                            <span ng-message="minlength">Movie title must be at least 3 characters in length</span>
-                            <span ng-message="maxlength">Movie title cannot exceed 50 characters in length</span>
+                            <span ng-message="minlength">Movie title must be at least 3 characters</span>
+                            <span ng-message="maxlength">Movie title cannot exceed 50 characters</span>
                         </span>
                     </span>
 
@@ -12,8 +12,8 @@
                           ng-if="movieForm.inputDirector.$dirty">
                         <span ng-messages="movieForm.inputDirector.$error">
                             <span ng-message="required">Director is required</span>
-                            <span ng-message="minlength">Director must be at least 3 characters in length</span>
-                            <span ng-message="maxlength">Director cannot exceed 50 characters in length</span>
+                            <span ng-message="minlength">Director must be at least 3 characters</span>
+                            <span ng-message="maxlength">Director cannot exceed 50 characters</span>
                         </span>
                     </span>
 
